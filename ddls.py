@@ -27,6 +27,10 @@ def show_table(engine, table_name):
         return '\n'.join([row[0].replace('\r', '\n') for row in result])
 
 
+#
+# 以下にテーブル定義を追記していく
+#
+
 iris = Table(
     "iris", metadata,
     Column("idx", Integer, nullable=False, comment="Unique ID"),
